@@ -1,0 +1,115 @@
+/* ---------- Header Improvements ---------- */
+
+.subtitle {
+  color: #6b7280;
+  font-size: 15px;
+  margin-top: 8px;
+  margin-bottom: 18px;
+  letter-spacing: 0.5px;
+}
+
+.tech-badge {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.tech-badge span {
+  background: #eef2ff;
+  color: #1d4ed8;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 13px;
+  font-weight: 600;
+  border: 1px solid #c7d2fe;
+  transition: all 0.3s ease;
+}
+
+.tech-badge span:hover {
+  background: #2563eb;
+  color: white;
+}
+
+/* ---------- Recorder ---------- */
+
+.status {
+  margin-top: 18px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.status-message {
+  margin-top: 10px;
+  text-align: center;
+  color: #6b7280;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* ---------- Transcript ---------- */
+
+.transcript-box p {
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+
+/* ---------- Better Keyword Chips ---------- */
+
+.chip {
+  cursor: default;
+  user-select: none;
+  box-shadow: 0 6px 15px rgba(37, 99, 235, 0.2);
+}
+
+.chip:hover {
+  transform: translateY(-2px) scale(1.05);
+}
+
+/* ---------- Button Active Effect ---------- */
+
+.record-btn:active,
+.speak-btn:active {
+  transform: scale(0.98);
+}
+
+/* ---------- Disabled Buttons ---------- */
+
+.record-btn:disabled,
+.speak-btn:disabled {
+  opacity: 0.75;
+}
+
+/* ---------- Smooth Card Animation ---------- */
+
+.card {
+  animation: fadeUp 0.5s ease;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* ---------- Scrollbar ---------- */
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #94a3b8;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #64748b;
+}
